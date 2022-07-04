@@ -1,0 +1,37 @@
+.cabecalho {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: var(--fundo-geral);
+    border-bottom: 0.05rem solid gray;
+    margin: 0;
+    min-width: 280px;
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+}
+
+.cabecalho__imagem {
+    background-image: url('../imagens/perfil-1.jpg');
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100%;
+    height: 5rem;
+    margin: 0 1.5rem;
+    width:5rem;
+}
+
+.cabecalho__texto {
+    line-height: 0.75rem;
+}
+
+.cabecalho__titulo {
+    font-size: 1.5rem;
+}
+
+.cabecalho__paragrafo {
+    color: var(--fonte-leve);
+    font-size: 1rem;
+}

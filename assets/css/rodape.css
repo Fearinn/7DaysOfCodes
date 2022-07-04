@@ -1,0 +1,117 @@
+.rodape {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    bottom: 0rem;
+    min-width: 280px;
+    position: fixed;
+    width: 100vw;
+}
+
+.rodape__botoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: end;
+    position: fixed;
+    bottom: 4rem;
+    right: 0;
+}
+
+
+.rodape__adicionais {
+    display: none;
+    align-items: center;
+    justify-content: end;
+}
+
+.rodape__adicionais__texto {
+    text-align: center;
+    vertical-align: center;
+    margin: 0 1rem 1rem 0;
+
+}
+
+.rodape__adicionais__texto p {
+    background-color: var(--fundo-card);
+    border-radius: 2323px;
+    vertical-align: middle;
+    font-size: 0.8rem;
+    margin: 0;
+    padding: 0.5rem;
+}
+
+.rodape__botao {
+    background: var(--botao-endereco);
+    border: 0.5px solid var(--fundo-geral);
+    border-radius: 100%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    color: var(--fundo-geral);
+    font-size: 2rem;
+    height: 3.5rem;
+    margin: 0 1rem 1rem 0;
+    width: 3.5rem;
+}
+
+.rodape__botao--local {
+    background: url('../imagens/pinfabiconee.png') no-repeat center , var(--botao-endereco);
+}
+
+.rodape__botao--remota {
+    background: url('../imagens/Camerafab.png') no-repeat center , var(--botao-endereco);
+}
+
+.rodape__acoes {
+    display: flex;
+    justify-content: space-around;
+    background: var(--fundo-card);
+    border-radius: 12px 12px 0 0;
+    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.06);
+    margin: 0;
+    list-style: none;
+    padding: 1rem 0;
+}
+
+.rodape__item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.rodape__icone {
+    height: 1.5rem;
+    margin-bottom: 0.2rem;
+    opacity: 0.3;
+    width: 1.5rem;
+}
+
+.rodape__icone--ativo {
+    opacity: initial;
+}
+
+.rodape__icone--consultas {
+    background: url('../imagens/Calendarioicone.png') no-repeat center;
+}
+
+.rodape__icone--clientes {
+    background: url('../imagens/clientes\ icone.png') no-repeat center;
+}
+
+.rodape__icone--relatorios {
+    background: url('../imagens/relatorios\ icone.png') no-repeat center;
+}
+
+.rodape__icone--menus {
+    background: url('../imagens/menu\ icone.png') no-repeat center;
+} 
+
+.rodape__link {
+    color: var(--fonte-leve);
+    font-size: 0.75rem;
+    text-decoration: none;
+}
+
+.rodape__link--ativo {
+    color: var(--ativo);
+}

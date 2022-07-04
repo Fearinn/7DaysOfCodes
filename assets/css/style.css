@@ -1,0 +1,18 @@
+:root {
+    --ativo: #4894FF;
+    --botao-endereco: #4894FF;
+    --botao-video: #FFB050;
+    --fonte-botao-clara: #FFFFFF;
+    --fonte-leve: #A3A3A3;
+    --fundo-card: #FFFFFF;
+    --fundo-geral: #F6F6F6;
+    min-width: 280px;
+    max-width: 2600px;
+
+}
+
+body {
+    background-color: var(--fundo-geral);
+    font-family: 'Montserrat', sans-serif;
+}
+

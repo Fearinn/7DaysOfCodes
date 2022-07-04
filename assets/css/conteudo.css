@@ -1,0 +1,155 @@
+.consulta {
+    margin: 8rem 1rem 4rem 1rem;
+}
+
+/*body {
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0.5;
+} */
+
+.consulta__titulo {
+    font-size: 1rem;
+}
+
+.consulta__card {
+    background-color: var(--fundo-card);
+    border-radius: 8px;
+    padding: 1rem 0 0.5rem 0;
+    margin-bottom: 1rem;
+    
+}
+
+.consulta__pessoa {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    line-height: 1.5rem;
+    border-bottom: 2px solid var(--fundo-geral);
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    width: calc(100% - 1.5rem);
+}
+
+.consulta__dados {
+    display: flex;
+    align-items: center;
+}
+
+.consulta__imagem {
+    border-radius: 100%;
+    width: 3rem;
+    height: 3rem;
+    margin: 0;
+}
+
+.consulta__imagem--luciana {
+    background: url('../imagens/perfil-2.jpg') left / cover no-repeat;
+}
+
+.consulta__imagem--larissa {
+    background: url('../imagens/perfil-3.jpg') left / cover no-repeat;
+}
+
+.consulta__imagem--marcos {
+    background: url('../imagens/perfil-4.jpg') left / cover no-repeat;
+}
+
+.consulta__imagem--clara {
+    background: url('../imagens/perfil-5.jpg') left / cover no-repeat;
+}
+
+.consulta__descricao {
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+.consulta__nome {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.consulta__tipo {
+    display: flex;
+    align-items: center;
+}
+
+.consulta__tipo__icone {
+    height: 1.3rem;
+    width: 1rem;
+    margin-right: 0.3rem;
+
+}
+.consulta__tipo__icone--remota {
+    background: url('../imagens/Camera.png') center / 1rem no-repeat;
+}
+
+.consulta__tipo__icone--local {
+    background: url('../imagens/pin.png') center / 1rem no-repeat;
+}
+
+.consulta__tipo__texto {
+    color: var(--fonte-leve);
+    font-size: 0.75rem;
+    margin: 0
+}
+
+.consulta__chat {
+    background: url('../imagens/chat1.png') center / 0.8rem no-repeat, var(--fundo-geral) ;
+    border-radius: 100%;
+    border: none;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.consulta__chat:hover, .consulta__chat:active, .consulta__botao:hover, .consulta__botao:active {
+    border: 1px solid var(--ativo);
+}
+
+.consulta__contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 5rem;
+    margin: 0.5rem 0;
+}
+
+.consulta__horario {
+    font-size: 0.75rem;
+    font-weight: bold;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.consulta__botoes {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+}
+
+.consulta__botao {
+    flex-grow: 1;
+    border-radius: 7px;
+    font-size: 0.875rem;
+    margin: 0 0.5rem; 
+    text-align: center;
+    padding: 1rem 0.5rem;
+
+}
+
+.consulta__botao--audio {
+    background-color: var(--fundo-card);
+    border: 2px solid var(--fundo-geral);
+}
+
+.consulta__botao--video {
+    background-color: var(--botao-video);
+    border: none;
+    color: var(--fonte-botao-clara);
+}
+
+.consulta__botao--endereco {
+    background-color: var(--botao-endereco);
+    border: none;
+    color: var(--fonte-botao-clara);
+    text-align: center;
+    width: 100%;
+}
