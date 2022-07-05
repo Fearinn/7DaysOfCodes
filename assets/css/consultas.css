@@ -9,17 +9,16 @@
 .consulta__card {
     background-color: var(--fundo-card);
     border-radius: 8px;
-    padding: 1rem 0 0.5rem 0;
     margin-bottom: 1rem;
-    
+    padding: 1rem 0 0.5rem 0;
 }
 
 .consulta__pessoa {
     display: flex;
     align-items: start;
     justify-content: space-between;
+    border-bottom: 2px solid var(--fundo-corpo);
     line-height: 1.5rem;
-    border-bottom: 2px solid var(--fundo-geral);
     padding: 0.5rem 0.5rem 0.5rem 1rem;
     width: calc(100% - 1.5rem);
 }
@@ -31,9 +30,9 @@
 
 .consulta__imagem {
     border-radius: 100%;
-    width: 3rem;
     height: 3rem;
     margin: 0;
+    width: 3rem;
 }
 
 .consulta__imagem--luciana {
@@ -69,8 +68,8 @@
 
 .consulta__tipo__icone {
     height: 1.3rem;
-    width: 1rem;
     margin-right: 0.3rem;
+    width: 1rem;
 
 }
 .consulta__tipo__icone--remota {
@@ -88,9 +87,9 @@
 }
 
 .consulta__chat {
-    background: url('../imagens/chat1.png') center / 0.8rem no-repeat, var(--fundo-geral) ;
-    border-radius: 100%;
+    background: url('../imagens/chat1.png') center / 0.8rem no-repeat, var(--fundo-corpo);
     border: none;
+    border-radius: 100%;
     height: 1.5rem;
     width: 1.5rem;
 }
@@ -110,8 +109,8 @@
 .consulta__horario {
     font-size: 0.75rem;
     font-weight: bold;
-    margin-left: 1rem;
     margin-bottom: 0.5rem;
+    margin-left: 1rem;
 }
 
 .consulta__botoes {
@@ -122,17 +121,17 @@
 
 .consulta__botao {
     flex-grow: 1;
-    border-radius: 7px;
+    border-radius: 8px;
     font-size: 0.875rem;
     margin: 0 0.5rem; 
-    text-align: center;
     padding: 1rem 0.5rem;
-
+    text-align: center;
+    text-decoration: none;
 }
 
 .consulta__botao--audio {
     background-color: var(--fundo-card);
-    border: 2px solid var(--fundo-geral);
+    border: 2px solid var(--fundo-corpo);
 }
 
 .consulta__botao--video {

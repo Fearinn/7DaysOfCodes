@@ -16,6 +16,7 @@
     <link href="assets/css/cabecalho.css" rel="stylesheet">
     <link href="assets/css/consultas.css" rel="stylesheet">
     <link href="assets/css/rodape.css" rel="stylesheet">
+    <link href="assets/css/formulario.css" rel="stylesheet">
     <link href="assets/css/responsividade.css" rel="stylesheet">
 
 </head>
@@ -323,21 +324,37 @@
                 </section>
             </section>
             <section class="agendamento">
+                <h2 class="agendamento__titulo">Novas consultas</h2>
                 <form class="agendamento__formulario">
+                    <div class="agendamento__campo agendamento__campo--nome">
                         <label for="nome">Nome do paciente</label>
-                        <input id="nome" required>
+                        <input class="agendamento__input" id="nome" required>
+                    </div>
+                    <div class="agendamento__campo agendamento__campo--tipo">
                         <label for="tipo">Tipo de consulta</label>
-                        <select id="tipo" required>
+                        <select class="agendamento__input" id="tipo" required>
+                            <option ></option>
                             <option>Remota</option>
                             <option>Local</option>
                         </select>
+                    </div>
+                    <div class="agendamento__campo agendamento__campo--data">
                         <label for="data">Data da consulta</label>
-                        <input type="date" id="data" required>
-                        <label for="horario">Horário</label>
-                        <input type="time" id="horario" required>
+                        <input class="agendamento__input" type="date" id="data" required>
+                    </div>
+                    <div class="agendamento__campo agendamento__campo--horario-de-inicio">
+                        <label for="horario-de-inicio">Horário de ínicio</label>
+                        <input class="agendamento__input" type="time" id="horario-de-inicio" required>
+                    </div>
+                    <div class="agendamento__campo agendamento__campo--horario-de-inicio">
+                        <label for="horario-de-fim">Horário de fim</label>
+                        <input class="agendamento__input" type="time" id="horario-de-fim" required>
+                    </div>
+                    <div class="agendamento__campo agendamento__campo--observacoes">
                         <label for="observacoes">Observações</label>
-                        <input id="observacoes">
-                        <button type="submit">Enviar</button>
+                        <textarea class="agendamento__input" id="observacoes"></textarea>
+                    </div>
+                        <button class="agendamento__botao" type="submit">Criar</button>
                 </form>
             </section>
         </main>
@@ -357,68 +374,30 @@
                 </span>
                 <button class="rodape__botao rodape__botao--remota"></button>
             </div>
-            <button class="rodape__botao" data-botao="flutuante">+</button>
+            <button class="rodape__botao" aria-label="Adicionar consulta" data-botao="flutuante">+</button>
         </section>
         <nav class="rodape__navegacao">
             <ul class="rodape__acoes">
                 <li class="rodape__item">
                     <div class="rodape__icone rodape__icone--consultas rodape__icone--ativo"></div>
-                    <a class="rodape__link rodape__link--ativo" href="#">Consultas</a>
+                    <a class="rodape__link rodape__link--ativo">Consultas</a>
                 </li>
                 <li class="rodape__item">
                     <div class="rodape__icone rodape__icone--clientes"></div>
-                    <a class="rodape__link" href="#">Clientes</a>
+                    <a class="rodape__link">Clientes</a>
                 </li>
                 <li class="rodape__item">
                     <div class="rodape__icone rodape__icone--relatorios"></div>
-                    <a class="rodape__link" href="#">Relatórios</a>
+                    <a class="rodape__link">Relatórios</a>
                 </li>
                 <li class="rodape__item">
                     <div class="rodape__icone rodape__icone--menus"></div>
-                    <a class="rodape__link" href="#">Menus</a>
+                    <a class="rodape__link">Menus</a>
                 </li>
             </ul>
         </nav>
     </footer>
-    <script>
-        'use scrict'
-        const corpo = document.querySelector("[data-bloco='corpo']")
-        const conteudo = document.querySelector('[data-bloco="cabecalho-e-principal"]')
-        const adicionais = document.querySelectorAll("[data-bloco='adicionais']")
-        const flutuante = document.querySelector("[data-botao='flutuante']")
-
-        function escureceCorpo() {
-            conteudo.style.opacity = '0.5'
-            corpo.style.background = 'rgba(0, 0, 0, 0.6)'
-            for (let i = 0; i < adicionais.length; i++)
-                adicionais[i].style.display = 'flex'
-        }
-
-        function voltaAoNormal() {
-            conteudo.style.opacity = 'initial'
-            corpo.style.background = 'var(--fundo-geral)'
-            for (let i = 0; i < adicionais.length; i++)
-                adicionais[i].style.display = 'none'
-        }
-
-        var clicado = 0
-
-        function novoVisual(botao) {
-            botao.addEventListener('click', function () {
-                clicado++
-                if (clicado % 2 == 0) {
-                    voltaAoNormal()
-                }
-                else {
-                    escureceCorpo()
-                }
-            })
-        }
-
-        novoVisual(flutuante)
-
-    </script>
-
+  <script src="/js/main.js" type="module"></script>
 </body>
 
 </html>

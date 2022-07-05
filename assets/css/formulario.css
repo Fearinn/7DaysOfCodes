@@ -1,0 +1,57 @@
+.agendamento {
+    display: none;
+    flex-direction: column;
+    margin: 0 1rem 1rem 1rem;
+    height: 42rem;
+    padding: 1rem 1rem 0 1rem;
+}
+
+.agendamento__titulo {
+    font-size: 1.3rem;
+    margin: 0;
+}
+.agendamento__formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 95%;
+}
+
+.agendamento__campo {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    width: 30%;
+}
+
+.agendamento__input {
+    border: 1px solid var(--borda-input);
+    border-radius: 8px;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    height: 2.5rem;
+    vertical-align: middle;
+}
+
+.agendamento__input:focus {
+    border-color: var(--ativo);
+    outline: none;
+}
+
+.agendamento__input:focus:invalid {
+    border-color: var(--invalido);
+}
+
+.agendamento__botao {
+    background-color: #4894FF;
+    border: 1px solid var(--borda-input);
+    border-radius: 8px;
+    color: var(--fonte-botao-clara);
+    margin-top: 0.5rem;
+    height: 3rem;
+    width: 30%;
+}
+
+.agendamento__botao:active, .agendamento__botao:hover {
+    border: 1px solid var(--ativo);
+}

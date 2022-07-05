@@ -10,11 +10,11 @@
 
 .rodape__botoes {
     display: flex;
+    align-items: end;
     flex-direction: column;
     justify-content: space-around;
-    align-items: end;
-    position: fixed;
     bottom: 4rem;
+    position: fixed;
     right: 0;
 }
 
@@ -26,27 +26,26 @@
 }
 
 .rodape__adicionais__texto {
+    margin: 0 1rem 1rem 0;
     text-align: center;
     vertical-align: center;
-    margin: 0 1rem 1rem 0;
-
 }
 
 .rodape__adicionais__texto p {
     background-color: var(--fundo-card);
     border-radius: 2323px;
-    vertical-align: middle;
     font-size: 0.8rem;
     margin: 0;
     padding: 0.5rem;
+    vertical-align: middle;
 }
 
 .rodape__botao {
-    background: var(--botao-endereco);
-    border: 0.5px solid var(--fundo-geral);
+    background: var(--botao-rodape);
+    border: 0.3px solid var(--fundo-corpo);
     border-radius: 100%;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
-    color: var(--fundo-geral);
+    color: var(--fundo-corpo);
     font-size: 2rem;
     height: 3.5rem;
     margin: 0 1rem 1rem 0;
@@ -54,11 +53,11 @@
 }
 
 .rodape__botao--local {
-    background: url('../imagens/pinfabiconee.png') no-repeat center , var(--botao-endereco);
+    background: url('../imagens/pinfabiconee.png') no-repeat center , var(--botao-rodape);
 }
 
 .rodape__botao--remota {
-    background: url('../imagens/Camerafab.png') no-repeat center , var(--botao-endereco);
+    background: url('../imagens/Camerafab.png') no-repeat center , var(--botao-rodape);
 }
 
 .rodape__acoes {
@@ -67,8 +66,8 @@
     background: var(--fundo-card);
     border-radius: 12px 12px 0 0;
     box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.06);
-    margin: 0;
     list-style: none;
+    margin: 0;
     padding: 1rem 0;
 }
 
@@ -112,6 +111,6 @@
     text-decoration: none;
 }
 
-.rodape__link--ativo {
+.rodape__link--ativo, .rodape__link:active, .rodape__link:hover {
     color: var(--ativo);
 }

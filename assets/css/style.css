@@ -1,18 +1,23 @@
 :root {
     --ativo: #4894FF;
+    --borda-cabecalho: gray;
+    --borda-input: #ECECEC;
     --botao-endereco: #4894FF;
     --botao-video: #FFB050;
+    --botao-rodape: #4894FF;
     --fonte-botao-clara: #FFFFFF;
     --fonte-leve: #A3A3A3;
+    --fundo-cabecalho: #F6F6F6;
     --fundo-card: #FFFFFF;
-    --fundo-geral: #F6F6F6;
+    --fundo-corpo: #F6F6F6;
+
+    --invalido: red;
+
     min-width: 280px;
     max-width: 2600px;
-
 }
 
 body {
-    background-color: var(--fundo-geral);
+    background-color: var(--fundo-corpo);
     font-family: 'Montserrat', sans-serif;
 }
-
