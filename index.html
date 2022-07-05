@@ -35,8 +35,8 @@
             <section class="consulta">
                 <section class="consulta__dia">
                     <h2 class="consulta__titulo">Hoje</h2>
-                    <section class="consulta__cards">
-                        <section class="consulta__card">
+                    <div class="consulta__cards">
+                        <div class="consulta__card">
                             <div class="consulta__pessoa">
                                 <div class="consulta__dados">
                                     <div class=" consulta__imagem consulta__imagem--luciana"></div>
@@ -61,8 +61,8 @@
                                     </a>
                                 </div>
                             </div>
-                        </section>
-                        <section class="consulta__card">
+                        </div>
+                        <div class="consulta__card">
                             <div class="consulta__pessoa">
                                 <div class="consulta__dados">
                                     <div class="consulta__imagem consulta__imagem--larissa"></div>
@@ -84,8 +84,8 @@
                                     </a>
                                 </div>
                             </div>
-                        </section>
-                        <section class="consulta__card">
+                        </div>
+                        <div class="consulta__card">
                             <div class="consulta__pessoa">
                                 <div class="consulta__dados">
                                     <div class=" consulta__imagem consulta__imagem--marcos"></div>
@@ -110,14 +110,14 @@
                                     </a>
                                 </div>
                             </div>
-                        </section>
-                    </section>
+                        </div>
+                    </div>
                 </section>
 
                 <section class="consulta__dia">
                     <h2 class="consulta__titulo">Amanhã</h2>
-                    <section class="consulta__cards">
-                        <section class="consulta__card">
+                    <div class="consulta__cards">
+                        <div class="consulta__card">
                             <div class="consulta__pessoa">
                                 <div class="consulta__dados">
                                     <div class="consulta__imagem consulta__imagem--clara"></div>
@@ -139,8 +139,8 @@
                                     </a>
                                 </div>
                             </div>
-                        </section>
-                        <section class="consulta__card">
+                        </div>
+                        <div class="consulta__card">
                             <div class="consulta__pessoa">
                                 <div class="consulta__dados">
                                     <div class=" consulta__imagem consulta__imagem--luciana"></div>
@@ -165,8 +165,8 @@
                                     </a>
                                 </div>
                             </div>
-                        </section>
-                        <section class="consulta__card">
+                        </div>
+                        <div class="consulta__card">
                             <div class="consulta__pessoa">
                                 <div class="consulta__dados">
                                     <div class=" consulta__imagem consulta__imagem--marcos"></div>
@@ -191,8 +191,8 @@
                                     </a>
                                 </div>
                             </div>
-                        </section>
-                        <section class="consulta__card">
+                        </div>
+                        <div class="consulta__card">
                             <div class="consulta__pessoa">
                                 <div class="consulta__dados">
                                     <div class="consulta__imagem consulta__imagem--larissa"></div>
@@ -214,14 +214,14 @@
                                     </a>
                                 </div>
                             </div>
-                        </section>
-                    </section>
+                        </div>
+                    </div>
                 </section>
 
                 <section class="consulta__dia">
                     <h2 class="consulta__titulo">Quarta-feira</h2>
-                    <section class="consulta__cards">
-                        <section class="consulta__card">
+                    <div class="consulta__cards">
+                        <div class="consulta__card">
                             <div class="consulta__pessoa">
                                 <div class="consulta__dados">
                                     <div class="consulta__imagem consulta__imagem--clara"></div>
@@ -243,8 +243,8 @@
                                     </a>
                                 </div>
                             </div>
-                        </section>
-                        <section class="consulta__card">
+                        </div>
+                        <div class="consulta__card">
                             <div class="consulta__pessoa">
                                 <div class="consulta__dados">
                                     <div class=" consulta__imagem consulta__imagem--luciana"></div>
@@ -269,8 +269,8 @@
                                     </a>
                                 </div>
                             </div>
-                        </section>
-                        <section class="consulta__card">
+                        </div>
+                        <div class="consulta__card">
                             <div class="consulta__pessoa">
                                 <div class="consulta__dados">
                                     <div class=" consulta__imagem consulta__imagem--marcos"></div>
@@ -295,8 +295,8 @@
                                     </a>
                                 </div>
                             </div>
-                        </section>
-                        <section class="consulta__card">
+                        </div>
+                        <div class="consulta__card">
                             <div class="consulta__pessoa">
                                 <div class="consulta__dados">
                                     <div class="consulta__imagem consulta__imagem--larissa"></div>
@@ -318,26 +318,43 @@
                                     </a>
                                 </div>
                             </div>
-                        </section>
-                    </section>
+                        </div>
+                    </div>
                 </section>
             </section>
-
+            <section class="agendamento">
+                <form class="agendamento__formulario">
+                        <label for="nome">Nome do paciente</label>
+                        <input id="nome" required>
+                        <label for="tipo">Tipo de consulta</label>
+                        <select id="tipo" required>
+                            <option>Remota</option>
+                            <option>Local</option>
+                        </select>
+                        <label for="data">Data da consulta</label>
+                        <input type="date" id="data" required>
+                        <label for="horario">Horário</label>
+                        <input type="time" id="horario" required>
+                        <label for="observacoes">Observações</label>
+                        <input id="observacoes">
+                        <button type="submit">Enviar</button>
+                </form>
+            </section>
         </main>
     </div>
 
     <footer class="rodape" data-bloco='rodape'>
         <section class="rodape__botoes">
             <div class="rodape__adicionais" data-bloco='adicionais'>
-                <div class="rodape__adicionais__texto">
+                <span class="rodape__adicionais__texto">
                     <p>Nova consulta na casa do paciente</p>
-                </div>
+                </span>
                 <button class="rodape__botao rodape__botao--local"></button>
             </div>
             <div class="rodape__adicionais" data-bloco='adicionais'>
-                <div class="rodape__adicionais__texto">
+                <span class="rodape__adicionais__texto">
                     <p>Nova consulta por vídeo</p>
-                </div>
+                </span>
                 <button class="rodape__botao rodape__botao--remota"></button>
             </div>
             <button class="rodape__botao" data-botao="flutuante">+</button>
@@ -401,7 +418,7 @@
         novoVisual(flutuante)
 
     </script>
-    
+
 </body>
 
 </html>
