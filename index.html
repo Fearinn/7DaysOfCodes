@@ -15,7 +15,7 @@
     <link href="assets/css/cabecalho.css" rel="stylesheet">
     <link href="assets/css/consultas.css" rel="stylesheet">
     <link href="assets/css/rodape.css" rel="stylesheet">
-    <link href="assets/css/formulario.css" rel="stylesheet">
+    <link href="assets/css/agendamento.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/responsividade.css" rel="stylesheet">
 
@@ -51,7 +51,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <a href="#" class=" consultas__chat"></a>
+                                <a href="#" class=" consultas__chat" aria-label="chat com o paciente"></a>
                             </div>
                             <div class="consultas__contato">
                                 <p class="consultas__horario">14:00 - 15:00 (1 hora)</p>
@@ -77,7 +77,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <a href="#" class=" consultas__chat"></a>
+                                <a href="#" class=" consultas__chat" aria-label="ir para o chat"></a>
                             </div>
                             <div class="consultas__contato">
                                 <p class="consultas__horario">16:00 - 17:00 (1 hora)</p>
@@ -100,7 +100,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <a href="#" class=" consultas__chat"></a>
+                                <a href="#" class=" consultas__chat" aria-label="ir para o chat"></a>
                             </div>
                             <div class="consultas__contato">
                                 <p class="consultas__horario">17:20 - 18:00 (40 minutos)</p>
@@ -132,7 +132,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <a href="#" class=" consultas__chat"></a>
+                                <a href="#" class=" consultas__chat" aria-label="ir para o chat"></a>
                             </div>
                             <div class="consultas__contato">
                                 <p class="consultas__horario">18:00 - 19:00 (1 hora)</p>
@@ -155,7 +155,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <a href="#" class=" consultas__chat"></a>
+                                <a href="#" class=" consultas__chat" aria-label="ir para o chat"></a>
                             </div>
                             <div class="consultas__contato">
                                 <p class="consultas__horario">14:00 - 15:00 (1 hora)</p>
@@ -181,7 +181,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <a href="#" class=" consultas__chat"></a>
+                                <a href="#" class=" consultas__chat" aria-label="ir para o chat"></a>
                             </div>
                             <div class="consultas__contato">
                                 <p class="consultas__horario">17:20 - 18:00 (40 minutos)</p>
@@ -207,7 +207,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <a href="#" class=" consultas__chat"></a>
+                                <a href="#" class=" consultas__chat" aria-label="ir para o chat"></a>
                             </div>
                             <div class="consultas__contato">
                                 <p class="consultas__horario">16:00 - 17:00 (1 hora)</p>
@@ -236,7 +236,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <a href="#" class=" consultas__chat"></a>
+                                <a href="#" class=" consultas__chat" aria-label="ir para o chat"></a>
                             </div>
                             <div class="consultas__contato">
                                 <p class="consultas__horario">18:00 - 19:00 (1 hora)</p>
@@ -259,7 +259,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <a href="#" class=" consultas__chat"></a>
+                                <a href="#" class=" consultas__chat" aria-label="ir para o chat"></a>
                             </div>
                             <div class="consultas__contato">
                                 <p class="consultas__horario">14:00 - 15:00 (1 hora)</p>
@@ -285,7 +285,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <a href="#" class=" consultas__chat"></a>
+                                <a href="#" class=" consultas__chat" aria-label="ir para o chat"></a>
                             </div>
                             <div class="consultas__contato">
                                 <p class="consultas__horario">17:20 - 18:00 (40 minutos)</p>
@@ -311,7 +311,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <a href="#" class=" consultas__chat"></a>
+                                <a href="#" class=" consultas__chat" aria-label="ir para o chat"></a>
                             </div>
                             <div class="consultas__contato">
                                 <p class="consultas__horario">16:00 - 17:00 (1 hora)</p>
@@ -327,36 +327,41 @@
             </section>
             <section class="agendamento">
                 <h2 class="agendamento__titulo">Novas consultas</h2>
-                <form class="agendamento__formulario">
+                <form class="agendamento__formulario" data-tag="form" novalidate>
                     <div class="agendamento__campo agendamento__campo--nome">
                         <label for="nome">Nome do paciente</label>
-                        <input class="agendamento__input" id="nome" required>
+                        <input data-tag="input" data-tipo="nome" class="agendamento__input" id="nome" placeholder="Digite nome e sobrenome" required>
+                        <span role="alert" class="agendamento__erro"></span>
                     </div>
                     <div class="agendamento__campo agendamento__campo--tipo">
                         <label for="tipo">Tipo de consulta</label>
-                        <select class="agendamento__input" id="tipo" required>
+                        <select data-tag="input" data-tipo="tipoConsulta" class="agendamento__input" id="tipo" required>
                             <option></option>
                             <option>Remota</option>
                             <option>Local</option>
                         </select>
+                        <span role="alert" class="agendamento__erro"></span>
                     </div>
                     <div class="agendamento__campo agendamento__campo--data">
                         <label for="data">Data da consulta</label>
-                        <input class="agendamento__input" type="date" id="data" required>
+                        <input data-tag="input" data-tipo="data" class="agendamento__input" type="date" id="data" required>
+                        <span role="alert" class="agendamento__erro"></span>
                     </div>
                     <div class="agendamento__campo agendamento__campo--horario-de-inicio">
                         <label for="horario-de-inicio">Horário de ínicio</label>
-                        <input class="agendamento__input" type="time" id="horario-de-inicio" required>
+                        <input data-tag="input" data-tipo="horarioInicio" class="agendamento__input" type="time" id="horario-de-inicio" required>
+                        <span role="alert" class="agendamento__erro"></span>
                     </div>
                     <div class="agendamento__campo agendamento__campo--horario-de-inicio">
                         <label for="horario-de-fim">Horário de fim</label>
-                        <input class="agendamento__input" type="time" id="horario-de-fim" required>
+                        <input data-tag="input" data-tipo="horarioFim" class="agendamento__input" type="time" id="horario-de-fim" required>
+                        <span role="alert" class="agendamento__erro"></span>
                     </div>
                     <div class="agendamento__campo agendamento__campo--observacoes">
                         <label for="observacoes">Observações</label>
                         <textarea class="agendamento__input" id="observacoes"></textarea>
                     </div>
-                    <button class="agendamento__botao" type="submit">Criar</button>
+                    <button class="agendamento__botao" data-tag="botao" type="submit">Criar</button>
                 </form>
             </section>
         </main>

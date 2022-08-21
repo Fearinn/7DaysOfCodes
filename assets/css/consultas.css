@@ -1,4 +1,5 @@
 .consultas {
+    border-bottom: 1px solid var(--borda-cabecalho);
     margin: 8rem 1rem 4rem 1rem;
 }
 
@@ -94,7 +95,7 @@
     width: 1.5rem;
 }
 
-.consultas__chat:hover, .consultas__chat:active, .consultas__botao:hover, .consultas__botao:active {
+.consultas__chat:hover, .consultas__chat:active {
     border: 1px solid var(--ativo);
 }
 
@@ -132,6 +133,7 @@
 .consultas__botao--audio {
     background-color: var(--fundo-card);
     border: 2px solid var(--fundo-corpo);
+    color: var(--fonte-botao-escura);
 }
 
 .consultas__botao--video {
