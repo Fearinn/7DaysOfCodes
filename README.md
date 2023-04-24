@@ -1,20 +1,20 @@
-# 🏥 Clinica Vet
+# 🏥 Medical Clinic
 
-Project from the [7DaysOfCode - HTML e CSS](https://7daysofcode.io/matricula/html-css-linkedin). 
+| :placard: Vitrine.Dev |     |
+| -------------  | --- |
+| :sparkles: Nome        | **Clínica Médica**
+| :label: Tecnologias | HTML, CSS, JS
+| :rocket: URL         | https://clinica-medica-7doc.vercel.app/
+| :fire: Challenge | https://7daysofcode.io/matricula/responsividade
 
-## 🎯 Goals
+![preview](https://user-images.githubusercontent.com/105985983/234135818-9f80e2d4-93d8-44a8-b521-8940716f36a0.png#vitrinedev)
 
-- Creating a static veterinary clinic based in a Figma layout;
-- Learning and consolidating knowledge in HTML and CSS.
+This was the first project I built by myself, without following instructions from a course.
 
-## ⚙️ Features 
+## :brain: Possible improvements
 
-- Form validation.
-
-## 🧠 Possible improvements
-
-- Migration to React and TSX;
-- Addition of new pages;
-- Replacing CSS by SCSS, Styled Components or another option;
-- Integration with database.
-- Feature: adding, editing and deleting appointments;
+- Migrate to React or other framework;
+- Add missing pages;
+- Replace CSS by SCSS, Styled Components or another option;
+- Integrate with database;
+- Make adding, editing and deleting appointments possible.
